@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="grid.css">
+    <title>HTML</title>
+</head>
+<body>
+    <div class="contenedor">
+    <header class="header">
+        <div class="logo"><a href="#">Roadmap</a></div>
+        <nav class="nav">
+                <ul class="main-nav__items">
+                        <li class="main-nav__item ">
+                            <a href="#">Que hacemos</a>
+                        </li>
+                        <li class="main-nav__item ">
+                            <a href="#">A quien va dirigido</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#">Registrarse</a>
+                        </li>
+                    </ul>
+        </nav>
+    </header>
+    <aside class="aside">
+            <div class="logo-tec html"></div>
+            <h2>HTML 5.2</h2> 
+            <ul>
+                <li><a href="#queEsHtml"> ¿ Que es HTML ?</a></li>
+                <li><a href="#historia">Historia de HTML</a> </li>
+                <li><a href="#seguridad">Escribir aplicaciones seguras con HTML</a></li>
+                <li><a href="#editores">Editores de código HTML</a></li>
+                <li><a href="#sintaxis">Sintaxis de HTML</a></li>
+                <li><a href="#estructuraBasica">Estructura básica de un documento HTML</a></li>
+                <li><a href="#especificaciones">Especificaciones W3C</a></li>
+                <li><a href="#tipos">Tipos de etiquetas</a></li>
+                <li><a href="#nuevas">Nuevas etiquetas en HTML5</a></li>
+                <li><a href="#obsoletas">Etiquetas Obsoletas en HTML5</a></li>
+               </ul>
+    </aside>
+    <main class="main">
+        <div class="quees">
+                <h2>¿ Que es HTML ?</h2>
+                <p class="quees">HTML (Hyper Text Markup Languaje) no es un lenguaje de programacion porque no tiene entrada de datos, es un lenjuage de marcado es bastante importante ya que sin ello el mundo web no existiria.</p>
+        </div>
+        <div class="historia">
+                <h2>Historia de HTML</h2>
+                <ul>
+                        <li>1989 - Inicio de su desarrollo</li>
+                        <li>1991 - Lanzamiento de la web (se basa de 3 conceptos. http, html y url)</li>
+                        <li>1992 - Lanzamiento de HTML (Nació de SMGL. Creado por Tim Bernes)</li>
+                        <li>1994 - Creación de la W3C (Consorcio que define los estandares de la web)</li>
+                        <li>1998 - HTML 4</li>
+                        <li>1999 - HTML 4.1 XHTML (Actualización del estadandar HTML 4)</li>
+                        <li>2004 - Creación de la WHATWG</li>
+                        <li>2008 - HTML 5 (Lanzado por WHATWG de forma independiente)</li>
+                        <li>2014 - Estándar HTML 5 (Lanzado por W3C de forma oficial)</li>
+                </ul>
+
+                <h2>Navegadores </h2>
+                <ul>
+                        <li>1993 - Mosaic (Primer navegador grafico)</li>
+                        <li>1994 - Netscape (Evolución de Mosaic)</li>
+                        <li>1995 - Internet Explorer</li>
+                        <li>1996 - Opera</li>
+                        <li>2003 - Safari</li>
+                        <li>2004 - Firefox</li>
+                        <li>2008 - Chrome</li>    
+                </ul>
+                <p>Con la llegada de estos navegadores y la llegada de HTML5 internet explorer dejo de dominar la web.
+                </p>
+                <p>Los grandes cambios que llegaron con HTML5 son: </p>
+                <ul>
+                        <li>Web semántica que es la introducción de datos adicionales para la interpretacion de los navegadores mediante las etiquetas meta</li>
+                        <li>APIs Web
+                                <ul>
+                                        <li>Geolocalización</li>
+                                        <li>IndexdDB</li>
+                                        <li>LocalStorage</li>
+                                </ul>
+                        </li>
+                        <li>Multimedia
+                                <ul>
+                                        <li>audio y video</li>
+                                </ul>
+                        </li>
+                        <li>Canvas
+                                <ul>
+                                        <li>Lienzo HTML</li>
+                                        <li>Videojuegos en 2D y 3D</li>
+                                </ul>
+                        </li>
+                        <li>SVG
+                                <ul>
+                                        <li>Gráficos vectoriales y animaciones vectoriales</li>
+                                </ul>
+                        </li>
+                </ul>
+                <div class="nota">
+                      <p>  HTML5 solo es un estandar el lenjuaje sigue siendo HTML</p>
+                      <p>HTML solo es estructura</p>
+                      <p>Las APIs de HTML5 se manejan a travez de JS</p>
+                </div>
+        </div>
+        <div class="seguridad">
+                <h2>Escribir aplicaciones seguras con HTML</h2>
+                <p>Se debe tener cuidado para evitar la introducción de vulnerabilidades a través de las cuales los atacantes pueden comprometer la integridad del sitio en sí o de los usuarios del sitio.</p>
+                
+                <ul>
+                        <li>No valida la entrada del usuario</li>
+                        <li>Cross-site scripting (XSS)</li>
+                        <li>inyección SQL</li>
+                        <li>Falsificación de solicitudes entre sitios (CSRF)</li>
+                        <li>Clickjacking</li>
+                </ul>
+                <div class="nota">
+                                <p>El código es independiente del código que escribas</p>
+                </div>
+                
+        </div>
+        <div class="editores">
+                <h2>Editores</h2>
+                <p>Se necesita un editor de texto</p>
+                <p>Existen varias alternativas</p>
+                <ul>
+                        <li>Sublime Text</li>
+                        <li>Atom</li>
+                        <li>Visual Estudio Code</li>
+                        <li>Brakets</li>
+                        <li>Notepad++</li>
+                        <li>Bloc de notas</li>
+                </ul>
+                <div class="nota">
+                                <p>El código es independiente del código que escribas</p>
+                </div>
+                
+        </div>
+        <div class="sintaxis">
+                <h2>Sintaxis</h2>
+                <p>HTML esta basado en el uso de etiquetas <> abrir etiqueta </> cierre de etiqueta.</p>
+                <p>cada etiqueta con atributos opcionales, excepto por algunas que son obligatorias</p>
+                <p>Existen etiquetas self-closing o etiquetas vacias las cuales no se cierran.</p>
+
+        </div>
+        <div class="estructura">
+                <h2 class="subtitulo">Estructura.</h2>
+                <div class="definicion">
+                                <pre>
+                                &lt; !DOCTYPE html &gt;
+                                &lt;html lang="en"&gt;
+                                        &lt;head&gt;
+                                                Aquí escribimos la informacion para el navegador
+                                                &lt;meta charset="UTF-8"&gt;
+                                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                                &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+                                                &lt;title>Document&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                        Aquí escribimos el contenido de la pagina
+                                        &lt;/body&gt;
+                                &lt;/html&gt;
+                                </pre>
+                                <p>Esta es la estructura básica de un documento HTML, comprenderemos progresivamente cada una de las etiquetas utilizadas en el ejemplo</p>
+
+                                <div class="nota">
+                                        <p>El editor genera automáticamente la estructura básica de html5</p>
+                                </div>
+
+                </div>
+        </div>
+        <div class="etiquetasMetaySeccion">
+                <h2>Etiquetas Meta</h2>
+                <p>Existen varios elementos meta:</p>
+                <p>Definición de Metadatos:</p>
+                <ul>
+                        <li>&lt; head &gt; Representa una colección de metadatos para el documento</li>
+                        <li>&lt; head &gt; Título de la página</li>
+                        <li>&lt; base &gt; Establece un link/atributo global para los enlaces</li>
+                        <li>&lt; link rel="relacion con el atributo href="ruta del archivo"" &gt; Trae un archivo externo al nuestro</li>
+                        <li>&lt; style &gt; Escribe código CSS dentro del documento HTML</li>
+                        <li>&lt; script &gt; Escribe código JS dentro del documento HTML&lt;  / script&gt; </li>
+                </ul>
+                <h2>Etiquetas de Sección</h2>
+                <ul>
+                        <li>&lt; body &gt; Todo el contenido de nuestra pagina&lt; body/&gt;</li>
+                        <li>&lt; article&gt; Represenata un contenido completo dentro de una seccion&lt;  / article&gt;</li>
+                        <li>&lt; h1 - h6 &gt; Titulos de seccion y de bloque&lt;  /h1 -h6 &gt;</li>
+                        <li>&lt;&lt; section&gt; divide un bloque de contenido&lt; /section&gt;</li>
+                        <li>&lt; aside&gt; Represenata un contenido completo dentro de una seccion&lt; /aside&gt;</li>
+                        <li>&lt; header&gt; cabezera de un bloque&lt; header /&gt;</li>
+                        <li>&lt; footer&gt; Represenata un contenido completo dentro de una seccion&lt; / footer&gt;</li>
+                        <li>&lt; nav&gt; Represenata un contenido completo dentro de una seccion&lt;  /nav &gt;</li>
+                        
+                </ul>
+                <h2>Etiquetas de Agrupación de contenido</h2>
+                <ul>
+                        <li>&lt; p &gt; Representa un parrafo &lt; /p &gt;</li>
+                        <li>&lt; addrees&gt; Representa los datos de contacto de la pagina &lt;  /addres &gt;</li>
+                        <li>&lt; hr &gt; Representa un salto tematico de nivel de párrafo&lt; / hr&gt;</li>
+                        <li>&lt; bluckquote&gt; Representa el contenido que se cita de otra fuente&lt;  /bluckquote&gt;</li>
+                        <li>&lt; ol&gt; Representa una lista de elementos, cuya ordenación es importante&lt;  /ol&gt;</li>
+                        <li>&lt; pre&gt; Formatear contenido&lt; /pre&gt;</li>
+                        <li>&lt; ul&gt; ReRepresenta una lista de elementos, cuya ordenación no es importante&lt; /ul&gt;</li>
+                        <li>&lt; li&gt; Cada uno de los elemetos de la lista, tanto ordenadas como desordenadas&lt; /li&gt;</li>
+                        <li>&lt;dl&gt; Representa una lista de definiciones&lt; /dl&gt;</li>
+                        <li>&lt;dt&gt; Cada uno de los términos definidos&lt; /dt&gt;</li>
+                        <li>&lt;div&gt; Agrupa contenidos&lt; /div&gt;</li>
+                </ul>
+                <h2>Etiquetas semánticas a nivel de texto</h2>
+                <p>Son elementos en línea</p>
+                <ul>
+                        <li>&lt; a &gt; Representa un link &lt; /a &gt;</li>
+                        <li>&lt; em &gt; Representa el énfasis del contenido &lt;  /em &gt;</li>
+                        <li>&lt; strong &gt; Representa un elemento de gran importancia &lt; / strong &gt;</li>
+                        <li>&lt; small &gt; Representa contenidos secundarios, como letra pequeña&lt;  /small &gt;</li>
+                        <li>&lt; cite&gt; Representa una referencia a un trabajo &lt;  /cite &gt;</li>
+                        <li>&lt; q &gt; Contenido citado de otra fuente&lt; /q &gt;</li>
+                        <li>&lt; code &gt; Se usa para representar codigo maquina&lt; /code&gt;</li>
+                        <li>&lt; sub &gt; Representa un súbindice&lt; /sub&gt;</li>
+                        <li>&lt;sup&gt; Representa un superindice&lt; /sup&gt;</li>
+                        <li>&lt;span&gt; Se usa para dar estilos&lt; /span&gt;</li>
+                        <li>&lt;br&gt; Salto de linea&lt; /br&gt;</li>
+                        <li>&lt;wbr&gt; Representa un salto de linea &lt; /wbr&gt;</li>
+                </ul>
+        </div>
+        <div class="tipos">
+                <h2>COntenido embebido</h2>
+                <p>El contenido enbebido es aquel que nos traemos desde fuera para mostrarlo en nuestra pagina</p>
+                <ul>
+                                <li>&lt; p &gt; Representa un parrafo &lt; /p &gt;</li>
+                                <li>&lt; addrees&gt; Representa los datos de contacto de la pagina &lt;  /addres &gt;</li>
+                                <li>&lt; hr &gt; Representa un salto tematico de nivel de párrafo&lt; / hr&gt;</li>
+                                <li>&lt; bluckquote&gt; Representa el contenido que se cita de otra fuente&lt;  /bluckquote&gt;</li>
+                                <li>&lt; ol&gt; Representa una lista de elementos, cuya ordenación es importante&lt;  /ol&gt;</li>
+                                <li>&lt; pre&gt; Formatear contenido&lt; /pre&gt;</li>
+                                <li>&lt; ul&gt; ReRepresenta una lista de elementos, cuya ordenación no es importante&lt; /ul&gt;</li>
+                                <li>&lt; li&gt; Cada uno de los elemetos de la lista, tanto ordenadas como desordenadas&lt; /li&gt;</li>
+                                <li>&lt;dl&gt; Representa una lista de definiciones&lt; /dl&gt;</li>
+                                <li>&lt;dt&gt; Cada uno de los términos definidos&lt; /dt&gt;</li>
+                                <li>&lt;div&gt; Agrupa contenidos&lt; /div&gt;</li>
+                        </ul>
+                        <h2>Etiquetas semánticas a nivel de texto</h2>
+                        <p>Son elementos en línea</p>
+                        <ul>
+                                <li> imagen :&lt; img  src="img.jpg" alt="Diseño minimalista de la serie lost"&gt; Imagen &lt; /img &gt;</li>
+                                <li>audio :&lt; audio src="audio.mp3" controls&gt; audio &lt;  /audio &gt;</li>
+                                <li> video: &lt; video &gt; video &lt; /video &gt;</li>
+                                <li>Iframe:&lt; iframe &gt; Representa iframe&lt;  /Iframe &gt;</li>
+                        </ul>
+        </div>
+        <div class="a
+        tributos" id="atributos">
+                <h2>Atributos</h2>
+                <p>Los atributos son valores adicionales que configuran los elementos tanto para el usuario como para el navegador</p>
+                <code> 
+                                &lt; etiqueta   atributo="valor"&gt; 
+                </code>
+                <ul>
+                        <li>Atributos básico: Se utilizan en todas las etiquetas HTML</li>
+                        <li>Atributos de internalización: Se utilizan para paginas que usan varios idiomas</li>
+                        <li>Atributos de foco: Relacionados co la accesibilidad de los sitios web</li>
+                        <li>Atributos personalizados: Son los atributos que creamos nosotros. Deben empezar con data-</li>
+                        <li></li>
+                </ul>
+        </div>
+        <div class="obsoletas">
+                <h2>Etiquetas nuevas y obsoletas</h2>
+                <h3>Etiquetas nuevas</h3>
+                <code>
+                        <pre>
+                        &lt;details&gt;
+                                &lt;sumary&gt; Titulo del Acordeon&lt; /sumary&gt;
+                                <p>contenido del acordeon</p>
+                                <p>contenido del acordeon</p>
+                                <p>contenido del acordeon</p>
+                        &lt; /ditails&gt;
+                                        
+                        </pre>
+                </code>
+                <code>
+                                <pre>
+                                &lt;dialog open&gt;
+                                        &lt;sumary&gt; Titulo del Acordeon&lt; /sumary&gt;
+                                        <h1>Ventana Modal</h1>
+                                        <p>contenido del dialog</p>
+                                &lt; /dialog&gt;            
+                                </pre>
+                        </code>
+        </div>
+        <div class="obsoletas">
+                        <h2>Rutas y enlaces</h2>
+                        <h3>Etiquetas nuevas</h3>
+                        <ul>
+                                <li>Rutas absolutas : Son unicas y condue a un unico sitio (ejem: hhtps://www.google.com)</li>
+                                <li>Rutas relativas : Estan relacionadas a la direccion del archivo (ejem /recursos/style.css)</li>
+                        </ul>
+                </div>
+                <div class="tablas">
+                                <h2>Tablas</h2>
+                                <h3>Se utiliza para moetrar datos tabulados</h3>
+                                <ul>
+                                        <li>Rutas absolutas : Son unicas y condue a un unico sitio (ejem: hhtps://www.google.com)</li>
+                                        <li>Rutas relativas : Estan relacionadas a la direccion del archivo (ejem /recursos/style.css)</li>
+                                </ul>
+                        </div>
+                        <div class="formularios">
+                                        <h2>Formularios</h2>
+                                        <h3>Se utiliza para moetrar datos tabulados</h3>
+                                        <ul>
+                                                <li>form</li>
+                                                <li>label</li>
+                                                <li>input</li>
+                                                <li>select</li>
+                                                <li>textarea</li>
+                                                <li>Datalist</li>
+                                        </ul>
+                                        <h3>form</h3>
+                                        <p>
+                                                
+                                        </p>
+                                </div>
+    </main>
+    <footer class="footer">
+        <p>foote</p>
+        <p>foote</p>
+        <p>foote</p>
+        <p>foote</p>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+/**=== Diseño Grid === */
+.contenedor{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 8% auto 10%;
+   
+    
+}
+.header{
+  position:fixed;
+  grid-column: span 2;
+  grid-row: span 1;
+  background-color:#000;
+  width:100%;
+  margin-left:-10px;
+  margin-top:-10px;
+  padding:0;
+ 
+}
+.main{
+    grid-column: span 1;
+    grid-row: span 1;
+   margin-top:50px;
+}
+.footer{
+    grid-column: span 3;
+    grid-row: span 2;
+}
+/**=== Fin diseño grid=== */
+/**=== Flex === */
+.flex-container.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-container.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+.flex-container.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container.detalle{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.flex-item.detalle{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 10px;
+    background: #d3d5d6;
+    box-shadow: 0px 0px 4px -2px rgba(0,0,0,0.51);
+}
+.flex-item.main{
+    display: flex;
+    height: 90px;
+    width: 90px;
+    margin: 25px;
+    border-radius: 50%;
+    border:2px solid #d3d5d6;
+    justify-content: center;
+    align-items: center;
+}
+.flex-item.main>div{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.flex-item.main:hover{
+    background: #f1f3f4;
+}
+/**=== Fin flex === */
+/* === Estilos  === */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+main{
+    background: linear-gradient(to right, 
+    white 0, 
+    white 49.9%, 
+    #000 49.9%, 
+    #000 50%,
+    white 50%, 
+    white 100%
+  );
+}
+footer{
+  padding: 10px;
+  background: #5f6368;
+}
+header{
+    padding: 10px;
+    background: #202124;
+}
+header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+.main-header__brand{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    height: 72px;
+    margin-right: auto;
+    padding-left: 24px;
+}
+
+
+.main-nav{
+    display: inline-block;  
+    text-align: right;
+    width: calc(100% - 92px);
+    vertical-align: middle;
+}
+.main-nav__items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-nav__item{
+    display: inline-block;
+    padding: 8px;
+    border-bottom:2px solid #fff;
+}
+a {
+    text-decoration: none;
+}
+.main-nav__item a:hover{
+    color: #5f6368;
+}
+.main-nav__item a{
+    color: #fff;
+}
+.main-nav__item a:active{
+    color: #574366;
+}
+h2,h3{
+background: white;
+box-shadow: 0px 0px 4px -2px rgba(0,0,0,0.51);
+padding: 5px;
+}
+.necesario{
+    width: 15%;
+    background-color: yellow;
+    margin: 2px;
+    font-size: .8rem;
+    border: 1px solid #202124;
+    padding: 2px;
+}
+.logo{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-size:50px; 
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color:#d3d5d6; 
+}
+.logo.html{
+    background-image:  url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/HTML5_logo_black.svg/1200px-HTML5_logo_black.svg.png);
+}
+.logo.css{
+    background-image:  url(https://dance-central.com.au/wp-content/uploads/css31.png);
+}
+.logo.js{
+    background-image:  url(https://techtatva.co/techtatva140717/wp-content/uploads/2018/09/js-logo.png);
+    
+}
+/* === fin Estilos  === */
+.form{
+  font-size:10px;
+  color:#fff;
+  justify-content: center;
+  align-items: center;
+}
+.form input{
+  display:block;
+  color:#fff;
+  background-color:transparent;
+  border:0;
+  border-bottom:1px solid #fff;
+}
+input[type="submit"]{
+  color:#000;
+  background-color:#fff;
+  width:100%;
+}
+@media all and (max-width: 768px) {
+   html {
+     font-size: 10px;
+   }
+ }
