@@ -139,7 +139,7 @@ header > div {
 .main-nav__item{
     display: inline-block;
     padding: 8px;
-    border-bottom:1px solid #fff;
+    border-bottom:2px solid #fff;
 }
 a {
     text-decoration: none;
